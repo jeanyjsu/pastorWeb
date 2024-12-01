@@ -11,7 +11,7 @@ const Descriptions = ({ selectedCountry }) => {
     //description changes whenever selectedCountry change
     useEffect(() => {
         if (selectedCountry) {
-            const apiUrl = `/api/mission-descriptions`; // Full backend URL
+            const apiUrl = `pastor-web-backend.vercel.app/api/mission-descriptions`; // Full backend URL
             console.log(`API Call: ${apiUrl}, Country: ${selectedCountry}, Language: ${i18n.language}`);
 
             // Use Axios to fetch data
