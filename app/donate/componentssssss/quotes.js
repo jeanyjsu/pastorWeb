@@ -27,11 +27,11 @@ const Quotes = () => {
                 }}
             >
                 <p style={{ color: '#737373', fontSize: '1rem', margin: 0 }}>
-                    "Remember this—a farmer who plants only a few seeds will get a small crop. But the one who plants
+                    `&quot;Remember this—a farmer who plants only a few seeds will get a small crop. But the one who plants
                     generously will get a generous crop. You must each decide in your heart how much to give. And don’t
                     give reluctantly or in response to pressure. For God loves a person who gives cheerfully. And God
                     will generously provide all you need. Then you will always have everything you need and plenty left over
-                    to share with others."
+                    to share with others.`&quot;
                 </p>
                 <p style={{ color: '#737373', fontSize: '1.2rem', marginBottom: '2dvh' }}>
                     - 2 Corinthians 9:6-8

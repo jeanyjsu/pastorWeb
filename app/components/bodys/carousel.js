@@ -101,7 +101,7 @@ const Carousel = () => {
                                             textAlign: "center",
                                             color: "#ffde59",
                                         }}
-                                    >"{quote}"</p>
+                                    >`&quot;{quote}`&quot;</p>
                             </blockquote>
                         </div>
                 );

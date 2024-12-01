@@ -38,7 +38,7 @@ const Paragraph4 = () => {
                     }}
                 >
                     After serving the Lord in various capacities as a missionary, God opened the door for me to move to Canada in 1997. Two years later, in 1999, I met my beautiful wife, and we were married that same year before settling in Vancouver. Together, we have been blessed with five wonderful children and two precious grandchildren, who continually inspire me to walk in faith and obedience.
-                    I believe God has gifted me as an evangelist, calling me to be a "hunter of souls." Over time, He has also shaped my heart to embrace a pastoral calling, equipping me to shepherd His people with compassion and care. Serving Jesus Christ is not just a job—it is a divine calling and the purpose of my life.
+                    I believe God has gifted me as an evangelist, calling me to be a `&quot;hunter of souls`&quot; Over time, He has also shaped my heart to embrace a pastoral calling, equipping me to shepherd His people with compassion and care. Serving Jesus Christ is not just a job—it is a divine calling and the purpose of my life.
                 </Typography>
             </Box>
 
