@@ -12,7 +12,7 @@ const RegularView = () => {
     useEffect(() => {
         const fetchEvents = async () => {
             try {
-                const response = await fetch('http://localhost:5000/api/event');
+                const response = await fetch('/api/event');
                 const data = await response.json();
 
                 // Normalize today's date to midnight

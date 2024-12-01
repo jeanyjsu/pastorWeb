@@ -12,7 +12,7 @@ const Botright = () => {
     useEffect(() => {
         const fetchVideoUrl = async () => {
             try {
-                const response = await fetch('http://localhost:5000/api/video');
+                const response = await fetch('/api/video');
                 if (!response.ok) {
                     throw new Error(`HTTP error! status: ${response.status}`);
                 }
