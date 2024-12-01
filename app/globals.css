@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+/* Style for the input field */
+.react-datepicker-wrapper input {
+  color: #2c2d2e; /* Change text color */
+  font-size: 1rem;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Style for the dropdown calendar */
+.react-datepicker {
+  color: #2c2d2e; /* Change text color in calendar */
+  font-family: Arial, sans-serif;
+}
+
+/* Style for the selected date */
+.react-datepicker__day--selected {
+  background-color: #7fff00; /* Change background color for selected date */
+  color: #2c2d2e; /* Change text color for selected date */
+}
+
+/* Optional: Hover effects */
+.react-datepicker__day:hover {
+  background-color: #e6f7d4; /* Light green hover effect */
+  color: #2c2d2e;
+}
+
+.MuiBackdrop-root {
+  display: none !important; /* Prevent Backdrop from being displayed */
+  opacity: 0;
+  visibility: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
