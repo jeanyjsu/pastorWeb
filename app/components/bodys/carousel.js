@@ -5,13 +5,13 @@ const Carousel = () => {
     const [activeSlide, setActiveSlide] = useState(1);
 
     const reviews = [
-        { name: "Matthew 22:9 NIV", quote: "So go to the street corners and invite to the banquet anyone you find.’" },
+        { name: "Matthew 22:9 NIV", quote: "So go to the street corners and invite to the banquet anyone you find." },
         { name: "Matthew 28:19 NIV", quote: "Therefore go and make disciples of all nations, baptizing them in the name of the Father and of the Son and of the Holy Spirit," },
-        { name: "Mark 16:15 NIV", quote: "He said to them, “Go into all the world and preach the gospel to all creation." },
-        { name: "Matthew 10:16 NIV", quote: "I am sending you out like sheep among wolves. \nTherefore be as shrewd as snakes and as innocent as doves." },
-        { name: "Luke 10:1-3 NIV", quote: "After this the Lord appointed seventy-two others and sent them two by two ahead of him to every town and place where he was about to go. He told them, “The harvest is plentiful, but the workers are few. Ask the Lord of the harvest, therefore, to send out workers into his harvest field. Go! I am sending you out like lambs among wolves." },
+        { name: "Mark 16:15 NIV", quote: "He said to them, Go into all the world and preach the gospel to all creation." },
+        { name: "Matthew 10:16 NIV", quote: "I am sending you out like sheep among wolves. Therefore be as shrewd as snakes and as innocent as doves." },
+        { name: "Luke 10:1-3 NIV", quote: "After this the Lord appointed seventy-two others and sent them two by two ahead of him to every town and place where he was about to go. He told them, The harvest is plentiful, but the workers are few. Ask the Lord of the harvest, therefore, to send out workers into his harvest field. Go! I am sending you out like lambs among wolves." },
         { name: "John 15:16 NIV", quote: "You did not choose me, but I chose you and appointed you so that you might go and bear fruit—fruit that will last—and so that whatever you ask in my name the Father will give you." },
-        { name: "Matthew 10:5-7 NIV", quote: "These twelve Jesus sent out with the following instructions: “Do not go among the Gentiles or enter any town of the Samaritans. Go rather to the lost sheep of Israel. As you go, proclaim this message: ‘The kingdom of heaven has come near." },
+        { name: "Matthew 10:5-7 NIV", quote: "These twelve Jesus sent out with the following instructions: “Do not go among the Gentiles or enter any town of the Samaritans. Go rather to the lost sheep of Israel. As you go, proclaim this message: The kingdom of heaven has come near." },
     ];
 
     //to cycle through the quotes, reset to first quote once it hits the last one
