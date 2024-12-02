@@ -18,7 +18,7 @@ const MissionImg = ({ selectedCountry }) => {
     //fetch images whenever the selectCountry change
     useEffect(() => {
         if (selectedCountry) {
-            fetch(`/api/getImgs?country=${encodeURIComponent(selectedCountry)}`)
+            fetch(`https://pastor-web-backend.vercel.app/api/getImgs?country=${encodeURIComponent(selectedCountry)}`)
                 .then((response) => response.json())
                 .then((data) => {
                     if (Array.isArray(data)) {

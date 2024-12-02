@@ -27,7 +27,7 @@ const AdminView = ({ setIsLoggedIn }) => {
     useEffect(() => {
         const fetchEvents = async () => {
             try {
-                const response = await fetch('/api/event');
+                const response = await fetch('https://pastor-web-backend.vercel.app/api/event');
                 const data = await response.json();
 
                 // Normalize today's date to midnight
@@ -60,7 +60,7 @@ const AdminView = ({ setIsLoggedIn }) => {
     //Delete event using its ID
     const handleDelete = async (id) => {
         try {
-            const response = await fetch(`/api/event/${id}`, {
+            const response = await fetch(`https://pastor-web-backend.vercel.app/api/event/${id}`, {
                 method: 'DELETE',
             });
 
@@ -106,7 +106,7 @@ const AdminView = ({ setIsLoggedIn }) => {
         }
 
         try {
-            const response = await fetch(`/api/event/${editingEventId}`, {
+            const response = await fetch(`https://pastor-web-backend.vercel.app/api/event/${editingEventId}`, {
                 method: 'PUT',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(editFormData),
@@ -161,7 +161,7 @@ const AdminView = ({ setIsLoggedIn }) => {
         }
 
         try {
-            const response = await fetch('/api/event', {
+            const response = await fetch('https://pastor-web-backend.vercel.app/api/event', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(newEventData),

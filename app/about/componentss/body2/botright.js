@@ -12,7 +12,7 @@ const Botright = () => {
     useEffect(() => {
         const fetchVideoUrl = async () => {
             try {
-                const response = await fetch('/api/video');
+                const response = await fetch('https://pastor-web-backend.vercel.app/api/video');
                 if (!response.ok) {
                     throw new Error(`HTTP error! status: ${response.status}`);
                 }

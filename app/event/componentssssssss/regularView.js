@@ -12,7 +12,7 @@ const RegularView = () => {
     useEffect(() => {
         const fetchEvents = async () => {
             try {
-                const response = await fetch('/api/event');
+                const response = await fetch('https://pastor-web-backend.vercel.app/api/event');
                 const data = await response.json();
 
                 // Normalize today's date to midnight
