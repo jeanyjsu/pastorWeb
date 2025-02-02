@@ -14,7 +14,7 @@ import Typography from '@mui/material/Typography';
 import { useTranslation } from 'react-i18next';
 
 
-const pages = ['home', 'about', 'donate', 'media', 'testimonials', 'event'];
+const pages = ['home', 'about', 'donate', 'media', 'album', 'event'];
 
 const NavBars = () => {
     const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -108,8 +108,8 @@ const NavBars = () => {
                                                 </Link>
                                             </MenuItem>
                                             <MenuItem onClick={handleCloseNavMenu}>
-                                                <Link href="/album" passHref>
-                                                    <Typography sx={{ textAlign: 'center' }}>{t('album')}</Typography>
+                                                <Link href="/testimonials" passHref>
+                                                    <Typography sx={{ textAlign: 'center' }}>{t('testimonials')}</Typography>
                                                 </Link>
                                             </MenuItem>
                                         </Box>
@@ -175,8 +175,8 @@ const NavBars = () => {
                                         </Link>
                                     </MenuItem>
                                     <MenuItem onClick={handleCloseAboutMenu}>
-                                        <Link href="/album" passHref>
-                                            <Typography>{t('album')}</Typography>
+                                        <Link href="/testimonials" passHref>
+                                            <Typography>{t('testimonials')}</Typography>
                                         </Link>
                                     </MenuItem>
                                 </Menu>

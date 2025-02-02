@@ -9,7 +9,7 @@ const Save = props => {
     return (
         <Box
             sx={{
-                width: { xs: '100%', sm: '100dvw', md:'40%', lg:'45%', xl:'40%' },
+                width: { xs: '100%', sm: '100dvw', md:'50%', lg:'35%', xl:'30%' },
                 minHeight: { xs: '90vh', sm: '50vh', md:'40vh', lg:'20vh', xl:'25vh' },
                 height:{sm:'60vh'},
                 display: 'flex',
@@ -17,6 +17,7 @@ const Save = props => {
                 alignItems: 'center',
                 justifyContent: { xs: 'center', sm: 'flex-start' },
                 backgroundColor: 'transparent',
+                marginLeft:{md:'0dvw', lg:'20dvw' }
             }}
         >
         {/* Save container */}
@@ -25,7 +26,7 @@ const Save = props => {
                     display: 'flex',
                     flexDirection: 'column',
                     alignItems: { xs: 'center', sm: 'center', md: 'flex-start' },
-                    width: { xs: '90%', sm: '75%', md: '100%' },
+                    width: { xs: '90%', sm: '75%', md: '100%' , lg:'130%'},
                     margin: '0 auto',
                     height: { xs: '90%', sm: '75%', md: '30%' },
                 }}
@@ -48,7 +49,7 @@ const Save = props => {
                 <Box>
                     <Typography
                         sx={{
-                            color: '#FFFFFF',
+                            color: '#FFDB58',
                             fontSize: { xs: '1.1rem', sm: '1.3rem', md: '1.5rem', lg: '2.1rem', xl: '2.2rem' },
                             textTransform: 'uppercase',
                             textAlign: { xs: 'center', sm: 'center', md: 'left' },
@@ -56,22 +57,6 @@ const Save = props => {
                         }}
                     >
                         {t('mission')}
-                    </Typography>
-                </Box>
-
-                {/* "Souls" */}
-                <Box>
-                    <Typography
-                        sx={{
-                            color: '#ffde59',
-                            fontSize: { xs: '5rem', sm: '5rem', md: '6rem', lg: '7rem', xl: '8rem' },
-                            textTransform: 'uppercase',
-                            textAlign: 'center',
-                            fontFamily: 'cursive',
-                            textShadow: '2px 2px 4px rgba(0, 0, 0, 0.8)',
-                        }}
-                    >
-                        {t('soul')}
                     </Typography>
                 </Box>
 

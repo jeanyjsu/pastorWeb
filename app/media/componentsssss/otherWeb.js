@@ -115,7 +115,7 @@ const OtherWeb = () => {
                         style={{
                             display: 'inline-block',
                             padding: '10px 20px',
-                            backgroundColor: '#b74e1a',
+                            backgroundColor: '#a027d1',
                             color: '#fff',
                             textDecoration: 'none',
                             fontSize: '16px',

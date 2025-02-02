@@ -55,12 +55,13 @@ const BodyMd = () => {
             <Livestream />
             <Box
                 sx={{
+                    border: '2px solid #ff99cc',
                     display: 'flex',
                     flexDirection: { xs: 'column', sm: 'column', md: 'row' },
                     justifyContent: 'space-between',
                     width: '95%',
                     marginTop: '2%',
-                    height: {xs:'55dvh',md:'50dvh'},
+                    minHeight: {xs:'55dvh',md:'50dvh'},//<---changed this from height to minHeight
                 }}
             >
                 {/* NextStreamTimer Section */}
@@ -106,13 +107,13 @@ const BodyMd = () => {
                         <Box
                             sx={{
                                 display: { xs: 'none', sm: 'none', md: 'flex' },
-                                width: '30%',
+                                width: '40%',
                                 height: '100%',
                                 justifyContent: 'flex-end',
                                 alignItems: 'center',
                                 position: 'relative',
                                 zIndex: 10,
-                                backgroundImage: `url('./actualNotStream.png')`,
+                                backgroundImage:'url(./theRealNotStreamPic.JPG)',
                                 backgroundSize: 'cover',
                                 backgroundPosition: 'center',
                                 backgroundRepeat: 'no-repeat',
@@ -169,7 +170,7 @@ const BodyMd = () => {
     return (
         <div style={{
             width: '100%',
-            height: '150dvh',
+            minHeight: '150dvh',//<--- this to minHeight from height
             display: 'flex',
             flexDirection: 'column',
             alignItems: 'center',

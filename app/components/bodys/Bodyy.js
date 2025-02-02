@@ -10,7 +10,7 @@ const Bodyy = () => {
     return (
         <Box
             sx={{
-                height: '110vh',
+                minHeight: '100vh',
                 width: '100%',
                 backgroundColor: { xs: '#2c2d2e', sm: '#2c2d2e', md: 'transparent' },
                 backgroundImage: {
@@ -31,8 +31,9 @@ const Bodyy = () => {
             <Box
                 sx={{
                     position: 'absolute',
-                    top: { xs: '41%', sm: '27%', md: '51%', lg:'45%', xl:'45%' },
-                    left: { xs: '50%', sm: '50%', md: '-41%', lg:'-37%', xl:'-41.5%' },
+                    top: { xs: '41%', sm: '40dvh', md: '75dvh', lg:'52dvh', xl:'55dvh' },
+                    left: { xs: '50%', sm: '50%', md: '-21%', lg:'-37%', xl:'-41.5%' },
+                    width:{xs:'90dvw', lg:'100dvw'},
                     transform: {
                         xs: 'translate(-50%, -50%)',
                         sm: 'translate(-50%, -50%)',
