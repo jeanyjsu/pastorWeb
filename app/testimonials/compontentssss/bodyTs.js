@@ -15,7 +15,7 @@ const BodyTs = () => {
 
     return (
         <div style={{
-            height: '105dvh',
+            minHeight: '100dvh',
             width: '100%',
             display: 'flex',
             flexDirection: 'column',
@@ -44,32 +44,24 @@ const BodyTs = () => {
             {/* MissionIn and Dropdown */}
             <Box
                 sx={{
+                    border: '2px solid #ECFFDC',
                     display: 'flex',
                     flexDirection: 'row',
                     width: '100%',
+                    height:{sm:'15dvh'},
                     marginBottom: '1rem',
                     boxSizing: 'border-box',
-                    marginRight: {xs:'7dvw', md:'0'},
+                    justifyContent:'center',
+                    alignItems:'center',
                 }}
             >
                 <Box
                     sx={{
-                        width: {xs: '100%', sm: '70%', md: 'auto',},
+                        border: '2px solid #abebc6',
+                        width: {xs: '100%', sm: '100%', md: '100%',},
                     }}
                 >
                     <MissionIn />
-                </Box>
-                <Box
-                    sx={{
-                        width: {xs: '45%', sm: '30%', md: '50%',},
-                    }}
-                >
-                    <Dropdown
-                        selectedCountry={selectedCountry}
-                        setSelectedCountry={setSelectedCountry}
-                        // Pass the selected language
-                        language={i18n.language}
-                    />
                 </Box>
             </Box>
 
@@ -78,6 +70,19 @@ const BodyTs = () => {
             <div style={{ width: '90%' }}>
                 <Descriptions selectedCountry={selectedCountry} />
             </div>
+            <Box
+                sx={{
+                    border: '2px solid #ff5733',
+                    width: {xs: '45%', sm: '30%', md: '50%',},
+                }}
+            >
+                <Dropdown
+                    selectedCountry={selectedCountry}
+                    setSelectedCountry={setSelectedCountry}
+                    // Pass the selected language
+                    language={i18n.language}
+                />
+            </Box>
 
             {/* MissionImg */}
             <Box
