@@ -8,7 +8,6 @@ const MissionIn = () => {
 
     return(
         <Box sx={{
-            border: '2px solid #ff5733',
             height:'10dvh',
             width:{xs:'90%', md:'100%', lg:'100%'},
             display:'flex',

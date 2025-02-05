@@ -40,7 +40,7 @@ const Paragraph1 = () => {
                         fontSize: 'calc(1rem * 1.5)',
                     }}
                 >
-                    I was born and raised in a Muslim family in Iran. At the age of 13, I left home, and by 17, I had fled the country, seeking refuge in Pakistan. It was there, at the age of 20, that I encountered Jesus Christ through the ministry of the Operation Mobilization (OM) team. Accepting Jesus as my Lord and Savior marked the beginning of a profound transformation in my life, one that continues to shape and inspire me to this day.
+                    Born and raised in a devout Muslim family in Iran, Faheem Moini’s journey is a remarkable testament to the transformative power of faith. At just 13 years old, he left home, and by the age of 17, he fled Iran, seeking refuge in Pakistan. It was there, at the age of 20, that Faheem encountered Jesus Christ through the ministry of the Operation Mobilization (OM) team. This life-changing encounter set him on a path of profound transformation and unwavering commitment to serving the Lord.
                 </Typography>
             </Box>
 

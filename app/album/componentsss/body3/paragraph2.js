@@ -7,11 +7,7 @@ const Paragraph2 = () => {
         <Box
             sx={{
                 display: 'flex',
-                flexDirection: {
-                    xs: 'column',
-                    sm: 'column',
-                    md: 'row',
-                },
+                flexDirection: { xs: 'column', sm: 'column', md: 'row' },
                 justifyContent: 'space-between',
                 alignItems: 'center',
                 width: '90%',
@@ -20,8 +16,7 @@ const Paragraph2 = () => {
                 boxSizing: 'border-box',
             }}
         >
-
-            {/* Paragraph */}
+            {/* Paragraph & Title Box */}
             <Box
                 sx={{
                     order: { xs: 0, sm: 0, md: 1 },
@@ -30,6 +25,20 @@ const Paragraph2 = () => {
                     marginBottom: { xs: '2dvh', sm: '2dvh', md: 0 },
                 }}
             >
+                {/* Title */}
+                <Typography
+                    variant="h4"
+                    sx={{
+                        fontWeight: 'bold',
+                        color: '#ff5733',
+                        fontSize: { xs: '1.8rem', sm: '2rem', md: '2.2rem' },
+                        marginBottom: '1dvh', // Space between title and paragraph
+                    }}
+                >
+                    A Journey of Growth and Preparation
+                </Typography>
+
+                {/* Paragraph */}
                 <Typography
                     variant="body1"
                     sx={{
@@ -37,7 +46,9 @@ const Paragraph2 = () => {
                         fontSize: 'calc(1rem * 1.5)',
                     }}
                 >
-                    After accepting Jesus, I became aware of the gaps in my education and knowledge. I realized that to serve the Lord effectively, I needed to equip myself spiritually and intellectually. Determined to dedicate my life to His service without wavering, I committed to never turning back. To enhance my understanding, I pursued further education and took advantage of every opportunity to grow. I attended short-term biblical courses and seminars whenever possible and completed a nine-month online theological education program in Pakistan. After moving to Canada, I continued my studies at Columbia Bible College from 2001 to 2003.
+                    After accepting Jesus as his Lord and Savior, Faheem recognized the need to grow spiritually and intellectually to serve the Lord effectively. With determination, he pursued theological education and took every opportunity to deepen his understanding of the Word of God. He completed a nine-month online theological program in Pakistan before moving to Canada, where he continued his studies at Columbia Bible College from 2001 to 2003.
+
+                    In 2017, feeling called to further his ministry, Faheem began a Master’s program in theology. However, financial challenges and family priorities required him to step back after completing two courses. Trusting in God’s plan, he chose to prioritize his family, believing that his calling as a father and husband was as important as his pastoral ministry.
                 </Typography>
             </Box>
 
@@ -65,4 +76,5 @@ const Paragraph2 = () => {
 };
 
 export default Paragraph2;
+
 

@@ -7,22 +7,46 @@ const Paragraph3 = () => {
         <Box
             sx={{
                 display: 'flex',
-                flexDirection: { xs: 'column', sm: 'column', md: 'row' },
-                justifyContent: { xs: 'center', sm: 'center', md: 'space-between' },
-                alignItems: 'center',
+                flexDirection: {
+                    xs: 'column', // Stack vertically on small screens
+                    sm: 'column',
+                    md: 'row', // Side by side for larger screens
+                },
+                justifyContent: 'space-between',
+                alignItems: {
+                    xs: 'center',
+                    sm: 'center',
+                    md: 'flex-start',
+                },
                 width: '90%',
                 marginTop: '2dvh',
                 padding: '2dvh',
                 boxSizing: 'border-box',
             }}
         >
-            {/* Paragraph */}
+            {/* Left Side - Title & Paragraph */}
             <Box
                 sx={{
+                    order: 0, // Always first (left side on large screens)
                     width: { xs: '100%', sm: '100%', md: '55%' },
                     textAlign: { xs: 'center', sm: 'center', md: 'left' },
+                    marginBottom: { xs: '2dvh', sm: '2dvh', md: 0 },
                 }}
             >
+                {/* Title */}
+                <Typography
+                    variant="h4"
+                    sx={{
+                        fontWeight: 'bold',
+                        color: '#ff5733',
+                        fontSize: { xs: '1.8rem', sm: '2rem', md: '2.2rem' },
+                        marginBottom: '1dvh',
+                    }}
+                >
+                    A Life Dedicated to Service
+                </Typography>
+
+                {/* Paragraph */}
                 <Typography
                     variant="body1"
                     sx={{
@@ -30,13 +54,16 @@ const Paragraph3 = () => {
                         fontSize: 'calc(1rem * 1.5)',
                     }}
                 >
-                    In 2017, after years of serving the Lord as a pastor, I felt a strong calling to pursue a Master’s degree to deepen my ministry. I enrolled in seminary with great hope, but after completing just two courses, I had to withdraw due to financial challenges and personal circumstances. During that time, I realized that my family needed my attention and care more than my academic pursuits. Trusting in God’s plan, I chose to prioritize my family, knowing that this, too, was part of my calling.
+                    In 1997, God opened the door for Faheem to move to Canada. Two years later, he married his wife and settled in Vancouver, where they built a family blessed with five children and two grandchildren. Faheem’s ministry evolved as he embraced his dual calling as an evangelist and pastor. He describes himself as a “hunter of souls,” driven to share the gospel with the lost, while also shepherding the flock with compassion and care.
+
+                    On June 30, 2024, Faheem was ordained as a Pastor with the Four Square Church. This joyous occasion was celebrated with the Riverside Community Church congregation and his family, including his beloved mother, who stood by him in full support.
                 </Typography>
             </Box>
 
-            {/* Image */}
+            {/* Right Side - Image */}
             <Box
                 sx={{
+                    order: 1, // Always second (right side on large screens)
                     width: { xs: '100%', sm: '100%', md: '40%' },
                     display: 'flex',
                     justifyContent: 'center',
@@ -58,4 +85,6 @@ const Paragraph3 = () => {
 };
 
 export default Paragraph3;
+
+
 

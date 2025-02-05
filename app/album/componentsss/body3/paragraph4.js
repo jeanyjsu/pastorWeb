@@ -20,16 +20,41 @@ const Paragraph4 = () => {
                 boxSizing: 'border-box',
             }}
         >
-
-            {/* Paragraph */}
+            {/* Left Side - Title & Paragraphs */}
             <Box
                 sx={{
-                    order: { xs: 0, sm: 0, md: 1 },
+                    order: { xs: 0, sm: 0, md: 1 }, // Ensures text appears first on the left
                     width: { xs: '100%', sm: '100%', md: '55%' },
                     textAlign: { xs: 'center', sm: 'center', md: 'left' },
                     marginBottom: { xs: '2dvh', sm: '2dvh', md: 0 },
                 }}
             >
+                {/* Title */}
+                <Typography
+                    variant="h4"
+                    sx={{
+                        fontWeight: 'bold',
+                        color: '#ff5733',
+                        fontSize: { xs: '1.8rem', sm: '2rem', md: '2.2rem' },
+                        marginBottom: '1dvh',
+                    }}
+                >
+                    The Turkey Refugee Project
+                </Typography>
+
+                {/* First Paragraph */}
+                <Typography
+                    variant="body1"
+                    sx={{
+                        color: 'black',
+                        fontSize: 'calc(1rem * 1.5)',
+                        marginBottom: '2dvh', // Spacing between paragraphs
+                    }}
+                >
+                    Faheem’s passion for outreach led him to launch the Turkey Refugee Project during his first missions trip to Istanbul. After witnessing the immense need for spiritual mentorship and legal advocacy among Farsi-speaking refugees and believers, he began hosting annual discipleship conferences in Yalova, Turkey. Since 2012, these conferences have empowered new believers to grow in their faith, with the 10th annual conference celebrated in 2022.
+                </Typography>
+
+                {/* Second Paragraph */}
                 <Typography
                     variant="body1"
                     sx={{
@@ -37,15 +62,16 @@ const Paragraph4 = () => {
                         fontSize: 'calc(1rem * 1.5)',
                     }}
                 >
-                    After serving the Lord in various capacities as a missionary, God opened the door for me to move to Canada in 1997. Two years later, in 1999, I met my beautiful wife, and we were married that same year before settling in Vancouver. Together, we have been blessed with five wonderful children and two precious grandchildren, who continually inspire me to walk in faith and obedience.
-                    I believe God has gifted me as an evangelist, calling me to be a `&quot;hunter of souls`&quot; Over time, He has also shaped my heart to embrace a pastoral calling, equipping me to shepherd His people with compassion and care. Serving Jesus Christ is not just a job—it is a divine calling and the purpose of my life.
+                    Faheem has extended his ministry to Germany, advocating for refugees and persecuted Christians. Drawing on his experience presenting cases to the United Nations in Ankara, Turkey, he continues to fight for the rights of oppressed believers. His ministry seeks to bring hope, support, and justice to those facing persecution in the East.
+
+                    Most recently, Faheem traveled to Israel, where he connected with Farsi-speaking Persian-Israelis. He discovered a significant spiritual need in this community and was offered an opportunity to minister there. However, due to ongoing conflict, these plans are currently on hold.
                 </Typography>
             </Box>
 
-            {/* Image */}
+            {/* Right Side - Image */}
             <Box
                 sx={{
-                    order: { xs: 1, sm: 1, md: 0 },
+                    order: { xs: 1, sm: 1, md: 0 }, // Ensures image stays on the right
                     width: { xs: '100%', sm: '100%', md: '40%' },
                     display: 'flex',
                     justifyContent: 'center',
@@ -66,6 +92,7 @@ const Paragraph4 = () => {
 };
 
 export default Paragraph4;
+
 
 
 

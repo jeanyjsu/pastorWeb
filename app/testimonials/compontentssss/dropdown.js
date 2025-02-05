@@ -72,9 +72,8 @@ export default function Dropdown({ selectedCountry, setSelectedCountry }) {
             height: '10dvh',
             width: {xs:'100%',md:'20dvw'},
             marginTop: '5dvh',
-            marginRight: '2dvw',
             display: 'flex',
-            flexDirection: 'column',
+            flexDirection: 'row',
             justifyContent: 'center',
             alignItems: 'center',
         }}>

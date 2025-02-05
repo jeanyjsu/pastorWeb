@@ -44,7 +44,7 @@ const BodyTs = () => {
             {/* MissionIn and Dropdown */}
             <Box
                 sx={{
-                    border: '2px solid #ECFFDC',
+
                     display: 'flex',
                     flexDirection: 'row',
                     width: '100%',
@@ -57,7 +57,7 @@ const BodyTs = () => {
             >
                 <Box
                     sx={{
-                        border: '2px solid #abebc6',
+
                         width: {xs: '100%', sm: '100%', md: '100%',},
                     }}
                 >
@@ -67,13 +67,17 @@ const BodyTs = () => {
 
 
             {/* Descriptions */}
-            <div style={{ width: '90%' }}>
+            <Box style={{
+                width: '90%',}}>
                 <Descriptions selectedCountry={selectedCountry} />
-            </div>
+            </Box>
             <Box
                 sx={{
-                    border: '2px solid #ff5733',
                     width: {xs: '45%', sm: '30%', md: '50%',},
+                    display: 'flex',          // Make it flex
+                    justifyContent: 'center', // Center horizontally
+                    alignItems: 'center',     // Center vertically (if needed)
+                    margin: '0 auto',
                 }}
             >
                 <Dropdown

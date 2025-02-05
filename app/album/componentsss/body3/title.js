@@ -22,7 +22,7 @@ const Ttitle = () => {
                     height: '100%',
                 }}
             >
-                Personal Testimony and Ministry Calling
+                Pastor Faheem Moini: A Journey of Faith, Transformation, and Ministry
             </Typography>
         </Box>
     );
